@@ -278,8 +278,6 @@
         box-shadow: inset 0px 3.14px 3.14px rgba(255, 255, 255, 0.25);
         border-radius: 16px;
     }
-    .orange-btn {
-    }
 
     /* END MODELS 320 */
 
@@ -411,7 +409,7 @@
     .steps {
         margin-bottom: 40px;
     }
-    .steps .container {
+    .steps .steps-container {
         padding: 0;
     }
     .steps_header {
@@ -428,19 +426,97 @@
     .step_header {
     }
     .step_round {
+        width: 165px;
+        height: 165px;
+        border-radius: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 10px solid #F7F7F7;
+        box-shadow: 0px 12.426px 16.568px rgb(138, 138, 138);
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
-    .step_round-number {
+    .step_round-number{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: -13px;
+        left: -18px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: radial-gradient(122.02% 122.01% at 50% 0%, #FFB82E 0%, #FF4D00 100%);
+        box-shadow: 4px 4px 24px rgba(255, 77, 0, 0.64);
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 110%;
+        color: white;
     }
+
+    .step_round-number span{
+        transform: translate(-1px, -1px);
+    }
+
     .step_round-icon {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 80px;
+        max-height: 80px;
     }
+
     .step_body {
+        font-size: 24px;
+        text-align: center;
+        line-height: 27px;
     }
     .step-mark {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-style: dashed 
     }
     .step_keys {
     }
     .step_keys-img {
+        width: 100%;
     }
+
+    .steps_slider{
+        margin-bottom: 50px;
+    }
+    
+    .steps_carousel-item{
+        max-width: 290px;
+        
+    }
+    
+    .steps_slider .carousel-inner{
+        padding-bottom: 60px;
+        padding-top: 40px;
+    }
+
+    .steps_slider .carousel-item{
+        height: 363px;
+    }
+    
+
+    .steps_slider .carousel-indicators > li{
+        width: 8px;
+        height: 8px;
+        background-color: #E0E0E0;
+        border-radius: 100%;
+    }
+
+    .steps_slider .carousel-indicators > li.active{
+        background-color: #FF5C00;
+    }
+
+
     /* END STEPS 320 */
     /* CALL */
     .call {
@@ -1274,12 +1350,7 @@
         margin: 0;
         color: #202020;
     }
-    .step-mark {
-        font-family: 'PT Sans', sans-serif;
-        font-weight: bold;
-        text-decoration: underline;
-        text-decoration-style: dashed 
-    }
+    
     .step-gray {
     }
     /* END STEPS 1200 */
