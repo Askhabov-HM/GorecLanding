@@ -552,7 +552,6 @@
     .call_desc {
         margin: 0 auto;
         margin-bottom: 20px;
-        max-width: 280px;
         font-family: PT Sans;
         font-style: normal;
         font-weight: normal;
@@ -643,7 +642,6 @@
         width: 100%;
     }
     .call_rules {
-        max-width: 280px;
         margin: 0 auto;
         font-style: normal;
         font-weight: 300;
@@ -959,7 +957,6 @@
     }
 
     .call_wrap {
-        max-width: 320px;
         margin: 0 auto;
     }
     
@@ -974,9 +971,155 @@
     .container{
         max-width: 576px;
     }
+    .call_wrap{
+        max-width: 320px;
+    }
+
+    .call_desc {
+        max-width: 280px;
+    }
+
+    .call_rules{
+        max-width: 280px;
+    }
+
+    .location_card {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
+    .header {
+        max-width: 768px;
+        background-position: -85px -105%;
+        padding-bottom: 50px;
+    }
+
+    .header_desc{
+        margin-left: -15px;
+    }
+
+    .header_desc-text {
+        font-size: 42px;
+    }
+
+    .header_car {
+        max-width: 450px;
+        position: absolute;
+        bottom: -51%;
+        right: -5%;
+    }
+
+    .header-style {
+        font-size: 32px;
+    }
+
+    .header_btn{
+        margin: 0;
+    }
+
+    .nav_contacts-phone{
+        font-size: 18px;
+        position: relative;
+    }
+
+    .nav_contacts-phone:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -30px;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/svg/phone.svg');
+    }
+
+    .nav_contacts-date{
+        font-size: 13px;
+    }
+
+    .mark-bg {
+        background-color: #fff;
+        
+    }
+
+    .request {
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+        background-image: url('../img/request-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding-top: 70px;
+    }
+
+    .request_header{
+        margin-bottom: 70px;
+        max-width: 860px;
+    }
+
+    .request_header-right {
+    }
+    .request_header-left{
+        color: white;
+    }
+
+    .request_header-left .mark-span{
+        text-align: right;
+        
+        color:#FF4D00;
+    }
+
+    .request_header p {
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 32px;
+        position: relative;
+        z-index: 200;
+        text-align: right;
+    }
+
+    .request_body {
+        position: relative;
+        padding-bottom: 70px;
+    }
+    .request_body-btn {
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        z-index: 200;
+        max-height: 112px;
+        padding: 26px 15px;
+        border: none;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 0px #cecece;
+        border-radius: 35px;
+        font-size: 28px;
+        text-decoration: none;
+    }
+
+    .request_car {
+        position: absolute;
+        bottom: 220px;
+        left: 0;
+    }
+    .request_car {
+        max-width: 420px;
+        width: 420px;
+        transform: translate(-50%, 55px);
+    }
+
+    .request_body-arrow-wrap{
+        position: absolute;
+        top: -50%;
+        right: 66px;
+    }
+
+    .terms_item-desc{
+        font-size: 25px;
+    }
+
     .terms_item-left-img{
         width: 220px;
     }
@@ -986,19 +1129,96 @@
         margin-left: 0;
     }
 
+    .call {
+        margin-bottom: 160px;
+    }
+    
+    .call_wrap {
+        max-width: 700px;
+        background-image: none;
+        background: radial-gradient(122.02% 122.01% at 50% 50.99%, #FFB82E 0%, #FF4D00 100%);
+        border-radius: 50px;
+    }
+
+    .call_form-groups{
+        flex-direction: row;
+    }
+
+    .call_form-group:nth-child(1) {
+        margin-right: 40px;
+    }
+
+    .call_title {
+        font-size: 32px;
+    }
+    
+    .call_desc {
+        font-size: 22px;
+        line-height: 110%;
+    }
+
+    .call_form-btn{
+        border-radius: 40px;
+    }
+
+    .call_form input {
+        margin-bottom: 30px;
+    }
+
+    .call_wrap-imgWrap{
+        top: 80px;
+        left: 170px;
+        max-width: 400px;
+    }
+
+
+    .location_card {
+        transform: translateY(0px);
+        max-width: 307px;
+    }
+
+    .location-wrap {
+        padding: 30px 0px;
+    }
+
+    .location_card-imgWrap{
+        width: 274px;
+    }
+
+    .location_card-suptitle{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .location_card-address{
+        font-size: 19px;
+    }
+
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer_logo{
+        margin-bottom: 0;
+    }
+
     .footer .container {
         flex-direction: row ;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin: 0 auto;
     }
 
     .footer_politics {
         order:2;
         margin-left: 90px;
+        margin-bottom: 0;
     }
 
     .footer_contacts {
+        margin-bottom: 0;
         order: 3;
         flex-direction: row;
     }
@@ -1009,6 +1229,7 @@
     }
 
     .footer_phone{
+        margin-bottom: 0;
         order: 1;
     }
 }
@@ -1016,11 +1237,21 @@
     .container {
         max-width: 768px;
     }
+
+    
+
 }
 
 @media (min-width: 992px) {
     
 }
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
 @media (min-width: 1200px) {
 
     /* HEADER */
