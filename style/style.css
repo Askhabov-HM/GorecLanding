@@ -1458,6 +1458,8 @@
     }
     .nav_logo-block {
         margin-right: 72px;
+        max-height: 47px;
+        max-width: 157px;
     }
     .nav_logo-img {
     }
@@ -2130,14 +2132,9 @@
         background-image: url('../img/location-bg.png');
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 130%;
-        padding: 0;
-    }
-    
-    .location-wrap .container {
+        background-size: cover;
         padding: 114px 0;
     }
-
     .location_card {
         width: 504px;
         background: radial-gradient(122.02% 122.01% at 50% -22.01%, #FFB82E 0%, #FF4D00 100%);
@@ -2241,6 +2238,7 @@
         margin-right: 30px;
     }
     .footer_phone {
+        text-align: right;
     }
     .footer_phone-text {
         font-family: PT Sans Narrow;
@@ -2311,7 +2309,25 @@
     
 }
 @media (min-width: 1400px) {
+    .header{
+        background-position: 350px 10px;
+        padding-bottom: 150px;
+    }
+
     .request-img-right, .request-img-left{
         display: block;
     }
+
+    .models {
+        margin-top: -150px;
+    }
 }
+
+@media (min-width: 1450px) {
+    .location-wrap {
+        background-size: contain;
+        }
+}
+
+
+
