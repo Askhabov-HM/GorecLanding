@@ -1129,6 +1129,10 @@
         margin-left: 0;
     }
 
+    .steps_item{
+        margin-bottom: 80px;
+    }
+
     .call {
         margin-bottom: 160px;
     }
@@ -1238,7 +1242,17 @@
         max-width: 768px;
     }
 
-    
+    .terms_item-right {
+        max-width: 370px;
+    }
+
+    .terms_item-desc{
+        font-size: 32px;
+    }
+
+    .terms_item-left-img {
+        width: 250px;
+    }
 
 }
 
