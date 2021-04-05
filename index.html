@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Горец - прокат автомобилей в Грозном</title>
+    <!-- ИКОНКА ВКЛАДКИ -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/Лого копия.ico" />
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FONTS -->
@@ -25,7 +27,7 @@
                 </div>
                 <div class="nav_mobile-show d-sm-none">
                     <p class='nav_mobile-desc'>г. Грозный, ул. <br> Назарбаева 113</p>
-                    <div class="nav_mobile-imgWrap">
+                    <div class="nav_mobile-imgWrap" data-target="#modal" data-toggle="modal">
                         <img src="./img/svg/phone.svg" alt="" class="nav_mobile-img">
                     </div>
                 </div>
@@ -35,7 +37,7 @@
                     </span>
                 </div>
                 <div class="nav_contacts ml-auto text-right d-none d-sm-block">
-                    <span class="nav_contacts-phone">8 (989) 900-90-90</span><br>
+                    <span class="nav_contacts-phone" data-target="#modal" data-toggle="modal"11☺>8 (989) 900-90-90</span><br>
                     <span class="nav_contacts-date">с 9:00 до 18:00</span>
                 </div>
             </nav>
@@ -48,10 +50,18 @@
                 </span>
             </div>
             <div class="header_btn-block">
-                <span class="header_btn orange-btn">
+                <span class="header_btn orange-btn" data-target="#modal" data-toggle="modal">
                     Забронировать авто
                 </span>
                 <div class="header_car">
+                    <div class="header_car-innerWrap d-block d-sm-none d-xl-block">
+                        <div class="float_wrap">
+                            <div class="float_wrap-text">
+                                <p class="mb-0 d-inline-block float_wrap-desc">Самый <span class="mark-span"><b>первый</b></span> прокат авто <span class="mark-span"><b>в Грозном</b></span></p>
+                                <div class="float_wrap-ring">№1</div>
+                            </div>
+                        </div>
+                    </div>
                     <img src="./img/header-car.png" alt="" class="header-car-img">
                 </div>
             </div>
@@ -82,7 +92,7 @@
                               <div class="model_slider-body">
                                 <h3 class="models_slider-title">Стандарт</h3>
                                 <p class="models_slider-desc">Lada Priora</p>
-                                <span class="models_slider-btn orange-btn">Забронировать</span>
+                                <span class="models_slider-btn orange-btn" data-target="#modal" data-toggle="modal">Забронировать</span>
                             </div>
                           </div>
                       </div>
@@ -93,7 +103,7 @@
                             <div class="model_slider-body">
                                 <h3 class="models_slider-title">Бизнес</h3>
                                 <p class="models_slider-desc">Toyota</p>
-                                <span class="models_slider-btn orange-btn">Забронировать</span>
+                                <span class="models_slider-btn orange-btn" data-target="#modal" data-toggle="modal">Забронировать</span>
                             </div>
                         </div>
                       </div>
@@ -104,7 +114,7 @@
                             <div class="model_slider-body">
                                 <h3 class="models_slider-title">Премиум</h3>
                                 <p class="models_slider-desc">Mercedes</p>
-                                <span class="models_slider-btn orange-btn">Забронировать</span>
+                                <span class="models_slider-btn orange-btn" data-target="#modal" data-toggle="modal">Забронировать</span>
                             </div>
                         </div>
                       </div>
@@ -149,7 +159,7 @@
                         <div class="model_cart-body">
                             <h3 class="model_cart-header">Стандарт</h3>
                             <p class="model_cart-desc">Lada Priora</p>
-                            <a class="orange-btn model_cart-btn" type="button">Забронировать</a>
+                            <a class="orange-btn model_cart-btn" type="button" data-target="#modal" data-toggle="modal">Забронировать</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +170,7 @@
                         <div class="model_cart-body">
                             <h3 class="model_cart-header">Бизнес</h3>
                             <p class="model_cart-desc">Toyota</p>
-                            <a class="orange-btn model_cart-btn" type="button">Забронировать</a>
+                            <a class="orange-btn model_cart-btn" type="button" data-target="#modal" data-toggle="modal">Забронировать</a>
                         </div>
                     </div>
                 </div>
@@ -169,14 +179,14 @@
                         <div class="model_cart-img model_cart-img-3">
                         </div>
                         <div class="model_cart-body">
-                            <h3 class="model_cart-header">Премиум</h3>
+                            <h3 class="model_cart-header model_cart-header-premium">Премиум</h3>
                             <p class="model_cart-desc">Mercedes</p>
-                            <a class="orange-btn model_cart-btn" type="button">Забронировать</a>
+                            <a class="orange-btn model_cart-btn" type="button" data-target="#modal" data-toggle="modal">Забронировать</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="model_showMore d-none d-xl-block">
+            <div class="model_showMore d-none d-lg-block">
                 <span class="model_showMore-span">
                     <span class="mark-span">
                         Показать все модели
@@ -205,7 +215,7 @@
                 </div>
             </div>
             <div class="request_body text-center">
-                <span class="request_body-btn">
+                <span class="request_body-btn" data-target="#modal" data-toggle="modal">
                     <span class="mark-span">
                         Оставить заявку
                     </span>
@@ -311,7 +321,7 @@
                         </div>
                     </div>
                     
-                    <div class="terms_button orange-btn text-center mx-auto">Хочу взять в прокат</div>
+                    <div class="terms_button orange-btn text-center mx-auto" data-target="#modal" data-toggle="modal">Хочу взять в прокат</div>
                 </div>  
         </div>
     </section>
@@ -582,14 +592,14 @@
                     <form action="" class="call_form">
                         <div class="call_form-groups d-flex justify-content-center">
                             <div class="call_form-group">
-                                <input type="text" class="call_form-name" placeholder="Введите имя">
+                                <input type="text" class="call_form-name" name='name' placeholder="Введите имя">
                             </div>
                             <div class="call_form-group">
-                                <input type="text" class="call_form-phone" placeholder="+7( ___ ) ___-__-__">
+                                <input type="text" class="call_form-phone" name='phone' placeholder="+7( ___ ) ___-__-__">
                             </div>
                         </div>
                         <div class="call_form-btnWrap">
-                            <button type="button" class="call_form-btn">
+                            <button type="button" class="call_form-btn" data-target="#modal" data-toggle="modal">
                                 Оставить заявку
                             </button>
                             <div class="call_wrap-imgWrap">
@@ -624,7 +634,7 @@
                     <span class="d-block location_card-address">
                         г. Грозный, ул. Назарбаева 113
                     </span>
-                    <span  class="location_btn">
+                    <span  class="location_btn" data-target="#modal" data-toggle="modal">
                         Забронировать авто
                     </span>
                 </div>
@@ -648,7 +658,7 @@
                     <img src="./img/svg/inst.svg" alt="">
                 </div>
                 <div class="footer_phone">
-                    <span class="footer_phone-text d-block">8 (989) 900-90-90</span>
+                    <span class="footer_phone-text d-block" data-target="#modal" data-toggle="modal">8 (989) 900-90-90</span>
                     <span class="footer_date">с 9:00 до 18:00</span>
                 </div>
             </div>
@@ -656,7 +666,25 @@
     </footer>
 
     <!-- FOOTER END -->
-
+    <div class="modal fade" tadindex="-1" id='modal' data-backdrop="static" data-keyboard="false" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_header text-center">
+                    <h5><b>Оставьте заявку</b> и наш менеджер <br> перезвонит Вам для брони <br> или консультации по ценам <br> и условиям</h5>
+                </div>
+                <div class="modal_body text-center">
+                    <form action="" class="modal_form d-flex flex-column justify-content-center">
+                        <input type="text" name='name' class="modal_form-input modal_form-name">
+                        <input type="text" name='phone'  class="modal_form-input modal_form-phone">
+                        <button type="button" class="modal_form-btn orange-btn">Оставить заявку</button>
+                    </form>
+                    <p class="modal_rule">
+                        Нажимая кнопку, Вы принимаете <span class="modal_underline">Положение и Согласие</span> на обработку <br> персональных данных.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
     
@@ -664,5 +692,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script/jquery.mask.js"></script>
+    <script src="./script/script.js"></script>
+
 </body>
 </html>

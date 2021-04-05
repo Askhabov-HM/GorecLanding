@@ -1,15 +1,3 @@
 $(document).ready( ()=>{
-    $('.model-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            }
-        }
-    })
+    $('.call_form-phone').mask('+7(000)000-00-00');
 })
