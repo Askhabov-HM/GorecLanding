@@ -37,10 +37,24 @@
 
 /* MODAL BOOTSTRAP */
 
+.modal{}
+
+.close {
+    position: absolute;
+    top: -36px;
+    right: -20px;
+    color: red !important;
+    font-weight: 100;
+    font-size: 45px;
+}
+
 .modal-content{
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 50px;
     width: 550px;
     height: 600px;
-    background-color: red;
+    background-color: white;
     /* medium */
 
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -61,6 +75,7 @@
 }
 
 .modal_form{
+    font-size: 22px;
     margin: 0 auto;
     max-width: 357px;
 }
@@ -70,9 +85,11 @@
 }
 
 .modal_form-input {
+    width: 100%;
+    position: relative;
     min-height: 88px;
     background: #F3F3F3;
-    box-shadow: inset 3px 3px 14px rgb(0 0 0 / 55%);
+    box-shadow: inset 2px 2px 12px rgb(0 0 0 / 10%);
     border: none;
     outline: none;
     border-radius: 15px;
@@ -82,6 +99,29 @@
     font-style: normal;
     font-weight: normal;
 }
+.modal_form-wrap{
+    position: relative;
+}
+.modal_form-wrap-name::after, .modal_form-wrap-phone::after{
+    position: absolute;
+    content: '';
+    top: 32px;
+    left: 28px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+}
+
+.modal_form-wrap-name::after{
+    background-image: url('../img/svg/person-form-icon.svg');
+}
+
+.modal_form-wrap-phone::after{
+    background-image: url('../img/svg/phone-form-icon.svg');
+}
+
 
 .modal-footer {
     border: none;
