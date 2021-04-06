@@ -149,12 +149,12 @@
     text-decoration: underline;
 }
 
-
-
-
-
-
 /* MODAL BOOTSTRAP END */
+
+
+
+
+
 @media (min-width : 320px){
     button {
         outline: none !important;
@@ -1238,6 +1238,58 @@
     .location_card {
         margin: 0 auto;
     }
+
+    .modal{}
+
+    .close{
+        top: -6px;
+        right: 10px;
+    }
+
+    .modal-content {
+        width: 300px;
+        height: 410px;
+        margin: 0 auto;
+    }
+
+    .modal_header h5 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .modal_form {
+        font-size: 14px;
+        max-width: 217px;
+    }
+
+    .modal_form-input {
+        min-height: 48px;
+        border-radius: 15px;
+        padding-left: 55px;
+    }
+
+    .modal_form-btn {
+        width: 217px;
+        max-width: 217px !important;
+        padding: 15px 40px;
+        font-size: 18px;
+        border-radius: 35px;
+        text-shadow: 0px 1px 0px rgb(0 0 0 / 25%);
+    }
+
+    .modal_rule {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .modal_form-wrap-phone::after, .modal_form-wrap-name::after {
+        top: 15px;
+        left: 20px;
+        width: 18px;
+    }
+
+    
+
 }
 
 @media (min-width: 768px) {
